@@ -76,15 +76,12 @@ export async function createApp({
   console.log("Inside that directory, you can run several commands:");
   console.log();
   console.log(chalk.cyan(`  ${displayedCommand} ${useYarn ? "" : "run "}dev`));
-  console.log("    Starts the development server.");
+  console.log("    Starts docz in dev mode.");
   console.log();
   console.log(
     chalk.cyan(`  ${displayedCommand} ${useYarn ? "" : "run "}build`)
   );
-  console.log("    Builds the app for production.");
-  console.log();
-  console.log(chalk.cyan(`  ${displayedCommand} start`));
-  console.log("    Runs the built app in production mode.");
+  console.log("    Builds the docz app for production.");
   console.log();
   console.log("We suggest that you begin by typing:");
   console.log();

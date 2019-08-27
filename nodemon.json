@@ -1,0 +1,1 @@
+{ "exec": "ts-node --files index.ts --help", "ext": "ts" }

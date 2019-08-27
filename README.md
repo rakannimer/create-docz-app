@@ -5,8 +5,32 @@ Forked from [create-next-app](https://github.com/zeit/next.js/tree/canary/packag
 ## Usage
 
 ```sh
-  npx create-docz-app --example basic docz-app
-  # or 
-  yarn create docz-app --example basic docz-app
+npx create-docz-app --example basic docz-app
+# or 
+yarn create docz-app --example basic docz-app
+```
+
+## Flow
+
+```sh
+npx create-docz-app --example flow docz-app
+# or 
+yarn create docz-app --example flow docz-app
+```
+
+## Gatsby
+
+```sh
+npx create-docz-app --example gatsby docz-app
+# or 
+yarn create docz-app --example gatsby docz-app
+```
+
+## TypeScript
+
+```sh
+npx create-docz-app --example typescript docz-app
+# or 
+yarn create docz-app --example typescript docz-app
 ```
 

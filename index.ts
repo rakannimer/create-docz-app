@@ -113,22 +113,20 @@ async function notifyUpdate() {
   }
 }
 
-if (require.main === module) {
-  run()
-    .then(notifyUpdate)
-    .catch(async reason => {
-      console.log();
-      console.log("Aborting installation.");
-      if (reason.command) {
-        console.log(`  ${chalk.cyan(reason.command)} has failed.`);
-      } else {
-        console.log(chalk.red("Unexpected error. Please report it as a bug:"));
-        console.log(reason);
-      }
-      console.log();
+run()
+  .then(notifyUpdate)
+  .catch(async reason => {
+    console.log();
+    console.log("Aborting installation.");
+    if (reason.command) {
+      console.log(`  ${chalk.cyan(reason.command)} has failed.`);
+    } else {
+      console.log(chalk.red("Unexpected error. Please report it as a bug:"));
+      console.log(reason);
+    }
+    console.log();
 
-      await notifyUpdate();
+    await notifyUpdate();
 
-      process.exit(1);
-    });
-}
+    process.exit(1);
+  });

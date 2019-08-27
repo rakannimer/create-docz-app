@@ -96,14 +96,14 @@ async function notifyUpdate() {
 
       console.log();
       console.log(
-        chalk.yellow.bold("A new version of `create-next-app` is available!")
+        chalk.yellow.bold("A new version of `create-docz-app` is available!")
       );
       console.log(
         "You can update by running: " +
           chalk.cyan(
             isYarn
-              ? "yarn global add create-next-app"
-              : "npm i -g create-next-app"
+              ? "yarn global add create-docz-app"
+              : "npm i -g create-docz-app"
           )
       );
       console.log();

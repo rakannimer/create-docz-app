@@ -4,7 +4,7 @@ import tar from "tar";
 
 export async function hasExample(name: string): Promise<boolean> {
   const res = await got(
-    `https://api.github.com/repos/pedronauck/docz/contents/examples/${encodeURIComponent(
+    `https://api.github.com/repos/doczjs/docz/contents/examples/${encodeURIComponent(
       name
     )}/package.json`
   ).catch(e => e);
@@ -16,7 +16,7 @@ export async function downloadAndExtractExample(
   name: string
 ): Promise<void> {
   return await promisePipe(
-    got.stream("https://codeload.github.com/pedronauck/docz/tar.gz/master"),
+    got.stream("https://codeload.github.com/doczjs/docz/tar.gz/master"),
     tar.extract({ cwd: root, strip: 3 }, [`docz-master/examples/${name}`])
   );
 }

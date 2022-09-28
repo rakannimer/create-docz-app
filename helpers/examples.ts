@@ -17,6 +17,6 @@ export async function downloadAndExtractExample(
 ): Promise<void> {
   return await promisePipe(
     got.stream("https://codeload.github.com/doczjs/docz/tar.gz/main"),
-    tar.extract({ cwd: root, strip: 3 }, [`docz-master/examples/${name}`])
+    tar.extract({ cwd: root, strip: 3 }, [`docz-main/examples/${name}`])
   );
 }

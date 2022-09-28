@@ -39,7 +39,7 @@
     "commander": "^3.0.0",
     "cpy": "^7.3.0",
     "cross-spawn": "^6.0.5",
-    "got": "^9.6.0",
+    "got": "^11.8.5",
     "make-dir": "^3.0.0",
     "promisepipe": "^3.0.0",
     "prompts": "^2.2.1",
